@@ -76,17 +76,17 @@ Tambien puedes usar `py` en lugar de `python`.
 
 Se verifico cada programa desde la terminal. Como minimo, se usaron estos casos:
 
-| Archivo                               | Entrada de ejemplo | Resultado esperado          |
-| ------------------------------------- | ------------------ | --------------------------- |
-| `condicionales/01_clasificar_edad.py` | `20` | Participante mayor de edad |
-| `condicionales/02_numero_mayor.py` | `90` y `45` | La sesion 1 tuvo mas tiempo |
-| `condicionales/03_calificacion.py` | `85` | Avance esperado |
-| `iterativas/01_contador_while.py` | No requiere | Registra la sesion 5 |
-| `iterativas/02_tabla_multiplicar.py` | `10` | Sesion 5: 50 puntos acumulados |
-| `iterativas/03_suma_pares.py` | No requiere | Puntos acumulados: 30 |
-| `funciones/01_saludar.py` | `Ana` | Bienvenida personalizada |
-| `funciones/02_area_rectangulo.py` | `120` y `60` | Area igual a 7200 cm2 |
-| `funciones/03_es_par.py` | `12` | Actividad con numero par |
+| Archivo                               | Entrada de ejemplo | Resultado esperado             |
+| ------------------------------------- | ------------------ | ------------------------------ |
+| `condicionales/01_clasificar_edad.py` | `20`               | Participante mayor de edad     |
+| `condicionales/02_numero_mayor.py`    | `90` y `45`        | La sesion 1 tuvo mas tiempo    |
+| `condicionales/03_calificacion.py`    | `85`               | Avance esperado                |
+| `iterativas/01_contador_while.py`     | No requiere        | Registra la sesion 5           |
+| `iterativas/02_tabla_multiplicar.py`  | `10`               | Sesion 5: 50 puntos acumulados |
+| `iterativas/03_suma_pares.py`         | No requiere        | Puntos acumulados: 30          |
+| `funciones/01_saludar.py`             | `Ana`              | Bienvenida personalizada       |
+| `funciones/02_area_rectangulo.py`     | `120` y `60`       | Area igual a 7200 cm2          |
+| `funciones/03_es_par.py`              | `12`               | Actividad con numero par       |
 
 Tambien conviene repetir las pruebas con valores limite: edad negativa, sesiones con la misma duracion, porcentajes `0`, `60`, `70`, `90`, `100` y `120`, y una meta de cero sesiones.
 
