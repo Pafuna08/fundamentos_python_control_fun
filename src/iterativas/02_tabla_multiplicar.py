@@ -1,26 +1,21 @@
-"""Genera una tabla de multiplicar con un ciclo for."""
+"""Calcula puntos acumulados para varias sesiones de practica."""
 
 
-def generar_tabla(numero):
-    """Devuelve las operaciones del 1 al 10 para un numero."""
-    tabla = []
-    for multiplicador in range(1, 11):
-        resultado = numero * multiplicador
-        tabla.append(f"{numero} x {multiplicador} = {resultado}")
-    return tabla
+def generar_plan_puntos(puntos_por_sesion, cantidad_sesiones=5):
+    """Devuelve los puntos acumulados usando un ciclo for."""
+    plan = []
+    for sesion in range(1, cantidad_sesiones + 1):
+        puntos = puntos_por_sesion * sesion
+        plan.append(f"Sesion {sesion}: {puntos} puntos acumulados")
+    return plan
 
 
 def main():
-    """Solicita un numero y muestra su tabla de multiplicar."""
-    numero = int(input("Ingresa un numero para ver su tabla: "))
-    for operacion in generar_tabla(numero):
-        print(operacion)
+    """Solicita puntos por sesion y muestra el plan de avance."""
+    puntos = int(input("Puntos obtenidos por sesion: "))
+    for registro in generar_plan_puntos(puntos):
+        print(registro)
 
 
 if __name__ == "__main__":
     main()
-numero = int(input("Ingresa un numero para ver su tabla: "))
-
-for multiplicador in range(1, 11):
-    resultado = numero * multiplicador
-    print(f"{numero} x {multiplicador} = {resultado}")

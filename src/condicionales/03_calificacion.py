@@ -1,37 +1,25 @@
-"""Asigna un nivel de desempeno a una calificacion."""
+"""Interpreta el resultado de una actividad del curso."""
 
 
-def clasificar_calificacion(calificacion):
-    """Devuelve el nivel para una calificacion entre 0 y 100."""
-    if calificacion < 0 or calificacion > 100:
-        return "La calificacion debe estar entre 0 y 100."
-    elif calificacion >= 90:
-        return "Desempeno superior."
-    elif calificacion >= 70:
-        return "Desempeno alto."
-    elif calificacion >= 60:
-        return "Desempeno basico."
+def interpretar_resultado(porcentaje):
+    """Devuelve el nivel de avance para un porcentaje entre 0 y 100."""
+    if porcentaje < 0 or porcentaje > 100:
+        return "El porcentaje debe estar entre 0 y 100."
+    elif porcentaje >= 90:
+        return "Avance sobresaliente"
+    elif porcentaje >= 70:
+        return "Avance esperado"
+    elif porcentaje >= 60:
+        return "Avance en construccion"
     else:
-        return "Desempeno bajo."
+        return "Necesita refuerzo"
 
 
 def main():
-    """Solicita una calificacion y muestra el desempeno."""
-    calificacion = float(input("Ingresa una calificacion entre 0 y 100: "))
-    print(clasificar_calificacion(calificacion))
+    """Solicita un porcentaje y muestra el nivel de avance."""
+    porcentaje = float(input("Ingresa el porcentaje de avance (0 a 100): "))
+    print(interpretar_resultado(porcentaje))
 
 
 if __name__ == "__main__":
     main()
-calificacion = float(input("Ingresa una calificacion entre 0 y 100: "))
-
-if calificacion < 0 or calificacion > 100:
-    print("La calificacion debe estar entre 0 y 100.")
-elif calificacion >= 90:
-    print("Desempeno superior.")
-elif calificacion >= 70:
-    print("Desempeno alto.")
-elif calificacion >= 60:
-    print("Desempeno basico.")
-else:
-    print("Desempeno bajo.")

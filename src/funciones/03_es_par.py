@@ -1,30 +1,19 @@
-"""Determina si un numero entero es par usando una funcion."""
+"""Determina si el numero de una actividad es par."""
 
 
-def es_par(numero):
-    """Devuelve True cuando el numero es divisible entre dos."""
-    return numero % 2 == 0
+def es_actividad_par(numero_actividad):
+    """Devuelve True si el numero de actividad es divisible entre dos."""
+    return numero_actividad % 2 == 0
 
 
 def main():
-    """Solicita un entero y muestra si es par o impar."""
-    numero = int(input("Ingresa un numero entero: "))
-    if es_par(numero):
-        print(f"{numero} es un numero par.")
+    """Solicita un numero de actividad y muestra su tipo."""
+    numero_actividad = int(input("Numero de la actividad: "))
+    if es_actividad_par(numero_actividad):
+        print(f"La actividad {numero_actividad} tiene numero par.")
     else:
-        print(f"{numero} es un numero impar.")
+        print(f"La actividad {numero_actividad} tiene numero impar.")
 
 
 if __name__ == "__main__":
     main()
-def es_par(numero):
-    """Devuelve True cuando el numero es divisible entre dos."""
-    return numero % 2 == 0
-
-
-numero = int(input("Ingresa un numero entero: "))
-
-if es_par(numero):
-    print(f"{numero} es un numero par.")
-else:
-    print(f"{numero} es un numero impar.")

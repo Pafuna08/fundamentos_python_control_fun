@@ -1,26 +1,21 @@
-"""Practica un ciclo while para contar de forma ascendente."""
+"""Registra sesiones de estudio hasta completar una meta."""
 
 
-def contar_hasta(limite):
-    """Devuelve los numeros desde 1 hasta el limite usando while."""
-    numeros = []
-    contador = 1
-    while contador <= limite:
-        numeros.append(contador)
-        contador += 1
-    return numeros
+def registrar_sesiones(meta):
+    """Devuelve los numeros de sesion hasta la meta usando while."""
+    sesiones = []
+    sesion_actual = 1
+    while sesion_actual <= meta:
+        sesiones.append(sesion_actual)
+        sesion_actual += 1
+    return sesiones
 
 
 def main():
-    """Muestra un conteo sencillo del 1 al 5."""
-    for numero in contar_hasta(5):
-        print("Contador:", numero)
+    """Muestra las cinco sesiones planeadas para la actividad."""
+    for sesion in registrar_sesiones(5):
+        print("Sesion de estudio:", sesion)
 
 
 if __name__ == "__main__":
     main()
-contador = 1
-
-while contador <= 5:
-    print("Contador:", contador)
-    contador = contador + 1

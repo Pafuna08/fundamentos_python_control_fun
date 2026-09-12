@@ -1,8 +1,8 @@
-"""Suma los numeros pares de un rango usando for."""
+"""Suma los puntos de actividades con numero par."""
 
 
-def sumar_pares(inicio, fin):
-    """Suma los valores pares incluidos entre inicio y fin."""
+def sumar_puntos_pares(inicio, fin):
+    """Devuelve actividades pares y su puntaje total."""
     suma = 0
     pares = []
     for numero in range(inicio, fin + 1):
@@ -13,19 +13,12 @@ def sumar_pares(inicio, fin):
 
 
 def main():
-    """Muestra los pares del 2 al 10 y su suma."""
-    pares, suma = sumar_pares(2, 10)
-    for numero in pares:
-        print("Numero par:", numero)
-    print("Suma de pares:", suma)
+    """Muestra los puntos de las actividades pares del 2 al 10."""
+    actividades, total = sumar_puntos_pares(2, 10)
+    for actividad in actividades:
+        print("Actividad par:", actividad)
+    print("Puntos acumulados:", total)
 
 
 if __name__ == "__main__":
     main()
-suma = 0
-
-for numero in range(2, 11, 2):
-    suma = suma + numero
-    print("Numero par:", numero)
-
-print("Suma de pares:", suma)

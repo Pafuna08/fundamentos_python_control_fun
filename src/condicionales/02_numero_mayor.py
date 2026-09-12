@@ -1,31 +1,22 @@
-"""Compara dos numeros con if, elif y else."""
+"""Compara el tiempo dedicado a dos sesiones de estudio."""
 
 
-def comparar_numeros(numero_1, numero_2):
-    """Devuelve el resultado de comparar dos numeros."""
-    if numero_1 > numero_2:
-        return f"El numero mayor es {numero_1}."
-    elif numero_2 > numero_1:
-        return f"El numero mayor es {numero_2}."
+def comparar_sesiones(minutos_sesion_1, minutos_sesion_2):
+    """Indica cual sesion tuvo mayor duracion o si empataron."""
+    if minutos_sesion_1 > minutos_sesion_2:
+        return f"La sesion 1 tuvo mas tiempo: {minutos_sesion_1} minutos."
+    elif minutos_sesion_2 > minutos_sesion_1:
+        return f"La sesion 2 tuvo mas tiempo: {minutos_sesion_2} minutos."
     else:
-        return "Los dos numeros son iguales."
+        return "Las dos sesiones tuvieron la misma duracion."
 
 
 def main():
-    """Solicita dos numeros y muestra cual es mayor."""
-    numero_1 = float(input("Ingresa el primer numero: "))
-    numero_2 = float(input("Ingresa el segundo numero: "))
-    print(comparar_numeros(numero_1, numero_2))
+    """Solicita dos duraciones y muestra cual sesion fue mas larga."""
+    sesion_1 = float(input("Minutos de la sesion 1: "))
+    sesion_2 = float(input("Minutos de la sesion 2: "))
+    print(comparar_sesiones(sesion_1, sesion_2))
 
 
 if __name__ == "__main__":
     main()
-numero_1 = float(input("Ingresa el primer numero: "))
-numero_2 = float(input("Ingresa el segundo numero: "))
-
-if numero_1 > numero_2:
-    print(f"El numero mayor es {numero_1}.")
-elif numero_2 > numero_1:
-    print(f"El numero mayor es {numero_2}.")
-else:
-    print("Los dos numeros son iguales.")

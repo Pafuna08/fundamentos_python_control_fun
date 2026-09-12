@@ -1,29 +1,21 @@
-"""Clasifica una edad usando una estructura condicional."""
+"""Clasifica la etapa de un participante de la actividad."""
 
 
-def clasificar_edad(edad):
-    """Devuelve el mensaje correspondiente a la edad recibida."""
+def clasificar_participante(edad):
+    """Devuelve una categoria de participacion segun la edad."""
     if edad < 0:
-        return "La edad no puede ser negativa."
+        return "Edad invalida"
     elif edad < 18:
-        return "Eres menor de edad."
+        return "Participante menor de edad"
     else:
-        return "Eres mayor de edad."
+        return "Participante mayor de edad"
 
 
 def main():
-    """Solicita una edad y muestra su clasificacion."""
-    edad = int(input("Ingresa tu edad: "))
-    print(clasificar_edad(edad))
+    """Solicita la edad del participante y muestra su categoria."""
+    edad = int(input("Ingresa la edad del participante: "))
+    print(clasificar_participante(edad))
 
 
 if __name__ == "__main__":
     main()
-edad = int(input("Ingresa tu edad: "))
-
-if edad < 0:
-    print("La edad no puede ser negativa.")
-elif edad < 18:
-    print("Eres menor de edad.")
-else:
-    print("Eres mayor de edad.")

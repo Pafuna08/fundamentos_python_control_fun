@@ -1,23 +1,16 @@
-"""Define y utiliza una funcion con un parametro de texto."""
+"""Personaliza el saludo de bienvenida al espacio de estudio."""
 
 
-def saludar(nombre):
-    """Devuelve un saludo personalizado."""
-    return f"Hola, {nombre}. Bienvenido a Python."
+def preparar_bienvenida(nombre, curso="Fundamentos de Python"):
+    """Devuelve un saludo con el nombre del aprendiz y el curso."""
+    return f"Hola, {nombre}. Bienvenido a {curso}."
 
 
 def main():
-    """Solicita un nombre y muestra el saludo."""
+    """Solicita el nombre del aprendiz y muestra la bienvenida."""
     nombre_aprendiz = input("Ingresa tu nombre: ")
-    print(saludar(nombre_aprendiz))
+    print(preparar_bienvenida(nombre_aprendiz))
 
 
 if __name__ == "__main__":
     main()
-def saludar(nombre):
-    """Muestra un saludo personalizado."""
-    print(f"Hola, {nombre}. Bienvenido a Python.")
-
-
-nombre_aprendiz = input("Ingresa tu nombre: ")
-saludar(nombre_aprendiz)
