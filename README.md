@@ -1,8 +1,8 @@
-# Fundamentos de Python: control y funciones
+# Fundamentos de Python: estructuras de control y funciones
 
-Proyecto individual para la evidencia **GA1-220501093-04-AA1-EV02**.
+Proyecto individual para la evidencia **GA1-220501093-04-AA1-EV02**. El objetivo es practicar variables, literales, operadores aritmeticos, comparaciones, cadenas, estructuras condicionales, ciclos y funciones mediante ejercicios pequenos y faciles de verificar.
 
-Este repositorio reune ejercicios sobre estructuras condicionales, estructuras iterativas y funciones en Python. Todos los programas se ejecutan con Python 3.
+Cada archivo fue organizado para poder ejecutarse directamente o importarse como modulo. Las funciones separan la logica del programa de la entrada y salida de datos, lo que facilita las pruebas.
 
 ## Estructura
 
@@ -67,3 +67,45 @@ Tambien puedes usar `py` en lugar de `python`.
 - Ciclos `while` y `for`.
 - Funciones con parametros, valores de retorno y llamadas.
 - Entrada de datos con `input()` y conversion con `int()` y `float()`.
+
+## Pruebas realizadas
+
+Se debe comprobar cada programa desde la terminal. Como minimo, usa estos casos:
+
+| Archivo                               | Entrada de ejemplo | Resultado esperado          |
+| ------------------------------------- | ------------------ | --------------------------- |
+| `condicionales/01_clasificar_edad.py` | `20`               | Mayor de edad               |
+| `condicionales/02_numero_mayor.py`    | `8` y `3`          | El mayor es 8               |
+| `condicionales/03_calificacion.py`    | `85`               | Desempeno alto              |
+| `iterativas/01_contador_while.py`     | No requiere        | Cuenta del 1 al 5           |
+| `iterativas/02_tabla_multiplicar.py`  | `7`                | Tabla del 7 del 1 al 10     |
+| `iterativas/03_suma_pares.py`         | No requiere        | Pares del 2 al 10 y suma 30 |
+| `funciones/01_saludar.py`             | `Ana`              | Saludo personalizado        |
+| `funciones/02_area_rectangulo.py`     | `5` y `3`          | Area igual a 15             |
+| `funciones/03_es_par.py`              | `12`               | Indica que es par           |
+
+Tambien conviene repetir las pruebas de condicionales con valores limite: edad `0`, calificacion `0`, `60`, `70`, `90` y `100`, y dos numeros iguales.
+
+## Versionamiento con Git
+
+Desde la carpeta del proyecto:
+
+```powershell
+git init
+git add .
+git commit -m "Desarrolla ejercicios de control y funciones"
+git branch -M main
+git remote add origin https://github.com/USUARIO/fundamentos_python_control_fun.git
+git push -u origin main
+```
+
+Reemplaza `USUARIO` por tu cuenta y crea previamente el repositorio publico en GitHub o GitLab. Para evidenciar el proceso, conserva los commits y comparte el enlace del repositorio junto con esta estructura.
+
+## Lista de entrega
+
+- [ ] La carpeta `src` contiene `condicionales`, `iterativas` y `funciones`.
+- [ ] Los nueve scripts se ejecutan con Python 3.
+- [ ] Cada ejercicio tiene docstring y codigo organizado.
+- [ ] Se probaron casos normales y casos limite.
+- [ ] El README explica la ejecucion y el versionamiento.
+- [ ] El proyecto esta publicado en un repositorio publico.
